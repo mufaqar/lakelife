@@ -9,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 const Header = () => {
   const [open, setOpen] = useState(false)
   return (
-    <header>
+    <header className='relative z-50'>
       <div className='bg-primary py-2'>
         <div className='container mx-auto px-3 flex items-center'>
           <div className='md:w-3/5 w-full'>
@@ -39,7 +39,7 @@ const Header = () => {
             <button onClick={() => setOpen(!open)} className='cursor-pointer text-2xl md:hidden block'>
               {open ? (<IoMdClose />) : (<FaBars />)}
             </button>
-            <ul className={`h-full w-full flex md:flex-row flex-col md:items-center md:static absolute left-0 right-0 md:bg-transparent  ${open ? " top-20 bg-primary py-0" : "-top-full"}`}>
+            <ul className={`h-full w-full flex md:flex-row flex-col md:items-center md:static absolute left-0 right-0 md:bg-transparent z-50  ${open ? " top-20 bg-primary py-0 h-full" : "-top-[300%]"}`}>
               <li className='md:h-full h-fit md:w-fit w-full'>
                 <Link href="#" className='text-sm font-semibold md:text-black text-white hover:text-white h-full w-full hover:bg-secondary flex md:items-center md:justify-center py-4 px-4'>
                   MEN
