@@ -2,8 +2,9 @@ import React from 'react'
 import PostStyle2 from './post-style2'
 import PostStyle3 from './post-style3'
 import Link from 'next/link'
+import PostStyle4 from './post-style4'
 
-const CategorySec = ({ data, cstm_class }: any) => {
+const CategorySec2 = ({ data, cstm_class }: any) => {
     return (
         <div>
             <div className='flex justify-between items-center'>
@@ -15,17 +16,10 @@ const CategorySec = ({ data, cstm_class }: any) => {
                 </Link>
             </div>
             <div className={`grid gap-10 mt-10 ${cstm_class}`}>
-                <div>
-                    {data.post?.slice(0, 1).map((_item: any, _idx: any) => {
-                        return (
-                            <PostStyle2 key={_idx} data={_item} />
-                        )
-                    })}
-                </div>
-                <div className='flex flex-col gap-7'>
+                <div className='grid md:grid-cols-3 gap-7'>
                     {data.post?.map((_item: any, _idx: any) => {
                         return (
-                            <PostStyle3 key={_idx} data={_item} />
+                            <PostStyle4 key={_idx} data={_item} />
                         )
                     })}
                 </div>
@@ -34,4 +28,4 @@ const CategorySec = ({ data, cstm_class }: any) => {
     )
 }
 
-export default CategorySec
+export default CategorySec2
