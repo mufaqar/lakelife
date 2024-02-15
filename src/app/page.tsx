@@ -5,6 +5,7 @@ import CategoryBox from '@/components/products/categ-box';
 import { TabsData } from '@/const/tabs';
 import { ProductsData } from '@/const/products';
 import CategorySec2 from '@/components/blog/category-sec2';
+import Sidebar from '@/components/blog/sidebar';
 
 export default function Home() {
   return (
@@ -13,11 +14,16 @@ export default function Home() {
         <BannerSlider />
       </section>
       <section className='py-16'>
-        <div className='container mx-auto px-3'>
-          {TabsData?.slice(1, 2).map((item, idx) => {
-            return (<CategorySec key={idx} data={item} cstm_class="md:grid-cols-2 grid-cols-1" />
-            )
-          })}
+        <div className='container mx-auto px-3 grid md:grid-cols-4 grid-cols-1 gap-10'>
+          <div className='md:col-span-3'>
+            {TabsData?.slice(1, 2).map((item, idx) => {
+              return (<CategorySec key={idx} data={item} cstm_class="md:grid-cols-2 grid-cols-1" />
+              )
+            })}
+          </div>
+          <div>
+            <Sidebar />
+          </div>
         </div>
       </section>
       <section className='py-16 bg-[#e2ebe5]'>
@@ -25,8 +31,13 @@ export default function Home() {
           <h2 className='md:text-[2rem] md:leading-8 text-2xl font-bold text-black mb-6'>
             TRUE WEST STORIES
           </h2>
-          <div>
-            <Tabs />
+          <div className='grid md:grid-cols-4 grid-cols-1 gap-10'>
+            <div className='md:col-span-3'>
+              <Tabs />
+            </div>
+            <div>
+              <Sidebar />
+            </div>
           </div>
         </div>
       </section>
@@ -56,10 +67,10 @@ export default function Home() {
       </section>
       <section className='py-16'>
         <div className='container mx-auto px-3'>
-            {TabsData?.slice(1,2).map((item, idx) => {
-              return (<CategorySec2 key={idx} data={item} cstm_class="md:grid-cols-1 grid-cols-1" />
-              )
-            })}
+          {TabsData?.slice(1, 2).map((item, idx) => {
+            return (<CategorySec2 key={idx} data={item} cstm_class="md:grid-cols-1 grid-cols-1" />
+            )
+          })}
         </div>
       </section>
     </main>

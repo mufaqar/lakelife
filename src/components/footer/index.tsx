@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTiktok, FaYoutube } from "react-icons/fa";
+import NewsLetter from '../newsletter';
 
 const Footer = () => {
   return (
@@ -10,22 +11,7 @@ const Footer = () => {
           <h6 className='text-2xl font-bold text-white uppercase mb-2'>
             JOIN OUR NEWSLETTER
           </h6>
-          <form className='flex md:flex-row flex-col items-end gap-1'>
-            <div className='w-full'>
-              <label htmlFor='email' className='text-sm font-bold text-white uppercase'>
-                Email Address:
-              </label>
-              <input
-                name='email'
-                id='email'
-                type='email'
-                placeholder='ADD YOUR EMAIL ADDRESS'
-                className='w-full h-10 px-3 py-1 text-xs font-semibold placeholder:text-gray-500 rounded border border-gray-400 focus:outline-none' />
-            </div>
-            <button type='submit' className='md:max-w-44 w-full h-10 rounded border border-white hover:border-secondary text-center text-sm font-semibold text-white uppercase bg-transparent hover:bg-secondary'>
-              Subscribe
-            </button>
-          </form>
+         <NewsLetter />
           <ul className='flex gap-2 mt-6'>
             <li>
               <Link href="#" className='inline-flex items-center justify-center w-10 h-10 rounded-full text-2xl bg-white text-primary hover:bg-secondary hover:text-white'>
