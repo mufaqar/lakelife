@@ -14,16 +14,14 @@ export default function Home() {
         <BannerSlider />
       </section>
       <section className='py-16'>
-        <div className='container mx-auto px-3 grid md:grid-cols-4 grid-cols-1 gap-10'>
-          <div className='md:col-span-3'>
+        <div className='container mx-auto px-3 '>
+          <div className=''>
             {TabsData?.slice(1, 2).map((item, idx) => {
-              return (<CategorySec key={idx} data={item} cstm_class="md:grid-cols-2 grid-cols-1" />
+              return (<CategorySec key={idx} data={item} cstm_class="md:grid-cols-3 grid-cols-1" />
               )
             })}
           </div>
-          <div>
-            <Sidebar />
-          </div>
+         
         </div>
       </section>
       <section className='py-16 bg-[#e2ebe5]'>

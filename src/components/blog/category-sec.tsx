@@ -14,8 +14,8 @@ const CategorySec = ({ data, cstm_class }: any) => {
                     View All
                 </Link>
             </div>
-            <div className={`grid gap-10 mt-10 ${cstm_class}`}>
-                <div>
+            <div className={`grid  gap-10 mt-10 ${cstm_class}`}>
+                <div className='md:col-span-2'>
                     {data.post?.slice(0, 1).map((_item: any, _idx: any) => {
                         return (
                             <PostStyle2 key={_idx} data={_item} />
