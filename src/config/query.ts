@@ -6,6 +6,23 @@ export const QAllProducts = `
       edges {
         node {
           title
+          images(first: 10) {
+            nodes {
+              altText
+              transformedSrc
+            }
+          }
+          variants(first: 1) {
+            nodes {
+              id
+            }
+          }
+          priceRange {
+            minVariantPrice {
+              amount
+              currencyCode
+            }
+          }
         }
       }
     }
