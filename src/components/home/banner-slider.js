@@ -7,7 +7,7 @@ import { Posts } from '@/const/posts'
 
 const BannerSlider = () => {
     const [nav1, setNav1] = useState(null);
-    const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(1)
     const [slider1, setSlider1] = useState(null);
 
     useEffect(() => {
@@ -37,12 +37,12 @@ const BannerSlider = () => {
                     {Posts?.map((item, idx) => (
                         <div
                             key={item.id}
-                            className={`relative md:min-h-[550px] md:max-h-[550px] min-h-[450px] max-h-[450px] h-full ${currentSlide === idx ? "active" : null}`}
+                            className={`relative md:min-h-screen md:max-h-screen min-h-[450px] h-full ${currentSlide === idx ? "active" : null}`}
                             onClick={() => {
                                 slider1?.slickGoTo(idx)
                             }}>
-                            <Image src={item?.img} alt={item.alt} width={735} height={640} className='w-full md:min-h-[550px] min-h-[450px] h-full object-cover' />
-                            <div className="absolute top-1/2 -translate-y-1/2 md:left-[49%] md:w-[40%] w-full md:px-0 px-5">
+                            <Image src={item?.img} alt={item.alt} width={735} height={640} className='w-full md:min-h-screen min-h-[450px] h-full object-cover' />
+                            <div className="absolute top-[25%] -translate-y-[25%] md:left-[49%] md:w-[40%] w-full md:px-0 px-5">
                                 <p className="text-sm font-semibold text-white mb-2">
                                     {item?.categ}
                                 </p>
@@ -59,7 +59,7 @@ const BannerSlider = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="thumb-wrapper">
+                <div className="thumb-wrapper absolute md:-bottom-28 -bottom-16">
                     {Posts?.map((item, idx) => (
                         <div
                             key={item.id}

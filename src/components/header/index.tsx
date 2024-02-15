@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { BsMinecartLoaded } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import Image from 'next/image';
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -35,7 +36,7 @@ const Header = () => {
       </div>
       <div className='bg-white md:h-16 h-12 border-b border-gray-300'>
         <div className='container mx-auto px-3 flex items-center h-full'>
-          <nav className='md:h-full w-2/6'>
+          <nav className='md:h-full w-2/5'>
             <button onClick={() => setOpen(!open)} className='cursor-pointer text-2xl md:hidden block'>
               {open ? (<IoMdClose />) : (<FaBars />)}
             </button>
@@ -62,12 +63,12 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className='w-3/6 text-center'>
-            <Link href="/" className='md:text-3xl text-2xl font-bold text-primary text-center'>
-              Lake Life
+          <div className='w-1/5 text-center'>
+            <Link href="/" className='md:text-3xl text-2xl font-bold text-primary text-center inline-block'>
+              <Image src="/assets/images/logo.png" alt='logo' width={447} height={237} className='w-1/2 mx-auto' />
             </Link>
           </div>
-          <div className='w-2/6'>
+          <div className='w-2/5'>
             <ul className='flex items-center justify-end gap-4'>
               <li>
                 <CiSearch className='text-3xl' />

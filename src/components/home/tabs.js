@@ -32,14 +32,18 @@ const Tabs = () => {
                         })}
 
                     </ul>
-                    <div className="tab-content mt-6">
-                        {TabsData?.map((item, idx) => {
-                            return (<div key={idx} className={openTab === item?.id ? "block" : "hidden"} >
-                                <PostStyle1 data={item} />
+                    {TabsData?.map((item, idx) => {
+                        return (
+                            <div key={idx} className={`tab-content flex flex-col divide-y divide-gray-400 ${openTab === item?.id ? "block" : "hidden"}`}>
+                                {item.post?.map((_item, _idx) => {
+                                    return (<div key={_idx} className="py-10">
+                                        <PostStyle1 data={_item} />
+                                    </div>
+                                    )
+                                })}
                             </div>
-                            )
-                        })}
-                    </div>
+                        )
+                    })}
                 </div>
             </div>
         </>
