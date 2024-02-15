@@ -12,7 +12,7 @@ const PostStyle1 = ({ data }: any) => {
                 <p className='text-sm font-semibold text-primary uppercase mb-3'>
                     {data?.categ}
                 </p>
-                <Link href="#" className='text-xl font-bold text-black uppercase'>
+                <Link href="#" className='text-xl font-bold text-black hover:text-primary uppercase'>
                     {data?.title}
                 </Link>
                 <p className='text-sm font-medium text-black my-5'>
