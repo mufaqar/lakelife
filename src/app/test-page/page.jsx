@@ -6,7 +6,7 @@ async function getData() {
      const res = await shopify({
           query : QSingleProduct,
           variables: {
-               "slug" : "test-product"
+               "slug" : "test-product-title"
           }
      });
      return {

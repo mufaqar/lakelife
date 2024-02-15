@@ -23,3 +23,17 @@ query MyQuery($slug: String!) {
     }
   }
 }`;
+
+export const QCheckout = `
+mutation CheckoutCreate($variantId : ID!, $quantity: Int!){
+  checkoutCreate(input:{
+    lineItems:{
+      variantId:$variantId,
+      quantity:$quantity
+    }
+  }){
+    checkout{
+      webUrl
+    }
+  }
+}`;
