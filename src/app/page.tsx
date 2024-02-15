@@ -9,7 +9,7 @@ import CategorySec2 from '@/components/blog/category-sec2';
 export default function Home() {
   return (
     <main>
-      <section className=''>
+      <section className='relative'>
         <BannerSlider />
       </section>
       <section className='py-16'>
@@ -38,7 +38,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className='py-16'>
+      <section className='py-16 bg-[#e2ebe5]'>
         <div className='container mx-auto px-3 grid md:grid-cols-2 grid-cols-1 gap-10'>
           <div>
             {TabsData?.slice(2, 3).map((item, idx) => {

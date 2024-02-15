@@ -23,7 +23,7 @@ const CategorySec = ({ data, cstm_class }: any) => {
                     })}
                 </div>
                 <div className='flex flex-col gap-7'>
-                    {data.post?.map((_item: any, _idx: any) => {
+                    {data.post?.slice(0, 4).map((_item: any, _idx: any) => {
                         return (
                             <PostStyle3 key={_idx} data={_item} />
                         )

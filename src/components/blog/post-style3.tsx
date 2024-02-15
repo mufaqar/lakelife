@@ -10,8 +10,11 @@ const PostStyle3 = ({ data }: any) => {
             </div>
             <div className='md:w-2/3 w-full'>
                 <Link href="#" className='text-base font-bold text-black hover:text-primary uppercase'>
-                    {data?.title}
+                    {data?.title.substring(0, 40)}
                 </Link>
+                <p className='text-sm font-medium text-black mt-4'>
+                    {data?.excerpt.substring(0, 60)}...
+                </p>
                 {data?.info &&
                     <ul className='flex gap-2 mt-3'>
                         <li className='text-xs font-medium text-black'>

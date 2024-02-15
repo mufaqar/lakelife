@@ -37,12 +37,12 @@ const BannerSlider = () => {
                     {Posts?.map((item, idx) => (
                         <div
                             key={item.id}
-                            className={`relative md:min-h-screen md:max-h-screen min-h-[450px] h-full ${currentSlide === idx ? "active" : null}`}
+                            className={`relative md:min-h-screen md:max-h-screen min-h-[450px] h-full bg-black ${currentSlide === idx ? "active" : null}`}
                             onClick={() => {
                                 slider1?.slickGoTo(idx)
                             }}>
-                            <Image src={item?.img} alt={item.alt} width={735} height={640} className='w-full md:min-h-screen min-h-[450px] h-full object-cover' />
-                            <div className="absolute top-[25%] -translate-y-[25%] md:left-[49%] md:w-[40%] w-full md:px-0 px-5">
+                            <Image src={item?.img} alt={item.alt} width={1920} height={650} className='w-full md:min-h-screen min-h-[450px] h-full object-cover opacity-80' />
+                            <div className="absolute top-1/3 -translate-y-1/3 left-1/3 -translate-x-1/3 md:w-[40%] w-full md:px-0 px-5">
                                 <p className="text-sm font-semibold text-white mb-2">
                                     {item?.categ}
                                 </p>
@@ -59,7 +59,7 @@ const BannerSlider = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="thumb-wrapper absolute md:-bottom-28 -bottom-16">
+                <div className="thumb-wrapper absolute bottom-4 left-1/2 -translate-x-1/2 container mx-auto">
                     {Posts?.map((item, idx) => (
                         <div
                             key={item.id}
