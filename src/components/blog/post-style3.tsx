@@ -12,9 +12,9 @@ const PostStyle3 = ({ data }: any) => {
                 <Link href="#" className='text-sm font-bold text-black hover:text-primary uppercase'>
                     {data?.title.substring(0, 30)}
                 </Link>
-                {/* <p className='text-sm font-medium text-black mt-4'>
+                <p className='text-sm font-medium text-black mt-4'>
                     {data?.excerpt.substring(0, 60)}...
-                </p> */}
+                </p>
                 {data?.info &&
                     <ul className='flex gap-2 mt-3'>
                         <li className='text-xs font-medium text-black'>
