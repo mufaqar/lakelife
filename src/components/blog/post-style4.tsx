@@ -5,7 +5,7 @@ import React from 'react'
 const PostStyle4 = ({ data }: any) => {
     return (
         <div className='flex flex-col gap-7'>
-            <div className='h-full w-full'>
+            <div className='h-[200px] w-full'>
                 <Image src={data?.img} alt='feature' width={735} height={640} className='h-full w-full' />
             </div>
             <div className='w-full'>

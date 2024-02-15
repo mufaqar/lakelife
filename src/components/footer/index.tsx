@@ -1,31 +1,23 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTiktok, FaYoutube } from "react-icons/fa";
+import NewsLetter from '../newsletter';
 
 const Footer = () => {
   return (
     <footer className='bg-primary pt-16'>
-      <div className='container mx-auto px-3 grid md:grid-cols-2 grid-cols-1 gap-12'>
-        <div>
+      <div className='container mx-auto px-3 grid md:grid-cols-5 grid-cols-1 gap-16'>
+        <div className='md:col-span-2 max-w-[450px]'>
           <h6 className='text-2xl font-bold text-white uppercase mb-2'>
+            ABOUT ME
+          </h6>
+          <p className='text-sm font-medium text-white mb-6'>
+            Sed ut perspiciatis unde omnis iste natus voluptatem fringilla tempor dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste tempor dignissim at, pretium et arcu natus voluptatem fringilla.
+          </p>
+          <h6 className='text-2xl font-bold text-white uppercase mb-5'>
             JOIN OUR NEWSLETTER
           </h6>
-          <form className='flex md:flex-row flex-col items-end gap-1'>
-            <div className='w-full'>
-              <label htmlFor='email' className='text-sm font-bold text-white uppercase'>
-                Email Address:
-              </label>
-              <input
-                name='email'
-                id='email'
-                type='email'
-                placeholder='ADD YOUR EMAIL ADDRESS'
-                className='w-full h-10 px-3 py-1 text-xs font-semibold placeholder:text-gray-500 rounded border border-gray-400 focus:outline-none' />
-            </div>
-            <button type='submit' className='md:max-w-44 w-full h-10 rounded border border-white hover:border-secondary text-center text-sm font-semibold text-white uppercase bg-transparent hover:bg-secondary'>
-              Subscribe
-            </button>
-          </form>
+          <NewsLetter />
           <ul className='flex gap-2 mt-6'>
             <li>
               <Link href="#" className='inline-flex items-center justify-center w-10 h-10 rounded-full text-2xl bg-white text-primary hover:bg-secondary hover:text-white'>
@@ -54,7 +46,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='grid md:grid-cols-4 grid-cols-1 gap-8'>
+        <div className='md:col-span-3 grid md:grid-cols-3 grid-cols-1 gap-8'>
           <div>
             <h6 className='text-base font-bold text-white uppercase mb-4'>
               Shop
@@ -88,23 +80,6 @@ const Footer = () => {
               <li>
                 <Link href="#" className='text-sm font-semibold text-white hover:text-secondary'>
                   GIFT CARDS
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h6 className='text-base font-bold text-white uppercase mb-4'>
-              ABOUT US
-            </h6>
-            <ul className='flex flex-col gap-2'>
-              <li>
-                <Link href="#" className='text-sm font-semibold text-white hover:text-secondary'>
-                  OUR STORIES
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className='text-sm font-semibold text-white hover:text-secondary'>
-                  CAREERS
                 </Link>
               </li>
             </ul>

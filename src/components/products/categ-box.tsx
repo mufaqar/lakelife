@@ -8,7 +8,7 @@ const CategoryBox = ({ data }: any) => {
       <div>
         <Image src={data?.img} alt='feature' width={600} height={750} className='h-full w-full object-cover rounded-xl' />
       </div>
-      <div className='absolute top-0 bg-gradient-to-b from-transparent via-transparent to-black/50 w-full h-full flex flex-col gap-2 justify-end px-5 py-4 rounded-xl'>
+      <div className='absolute top-0 bg-gradient-to-b from-transparent via-transparent to-black/90 w-full h-full flex flex-col gap-2 justify-end px-5 py-4 pb-8 rounded-xl'>
         <Link href="#" className='md:text-2xl text-xl font-bold text-white uppercase'>
           {data?.categ}
         </Link>

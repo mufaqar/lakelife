@@ -8,7 +8,7 @@ const PostStyle1 = ({ data }: any) => {
             <div className='md:w-1/2 w-full'>
                 <Image src={data?.img} alt='feature' width={735} height={640} className='h-full w-full' />
             </div>
-            <div className='md:w-1/2 w-full'>
+            <div className='md:w-1/2 w-full py-4 px-5'>
                 <p className='text-sm font-semibold text-primary uppercase mb-3'>
                     {data?.categ}
                 </p>

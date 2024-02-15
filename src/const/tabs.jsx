@@ -47,19 +47,7 @@ export const TabsData = [
         post: [
             {
                 categ: 'Style Guide',
-                title: 'If the path be beautiful, let us not ask where it leads',
-                excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
-                link: "#",
-                info: {
-                    publish: "June 18, 2017",
-                    author: "admin",
-                },
-                alt: "featured1",
-                img: "/assets/images/post/2.jpg",
-            },
-            {
-                categ: 'Style Guide',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -71,7 +59,19 @@ export const TabsData = [
             },
             {
                 categ: 'Style Guide',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
+                excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
+                link: "#",
+                info: {
+                    publish: "June 18, 2017",
+                    author: "admin",
+                },
+                alt: "featured1",
+                img: "/assets/images/post/2.jpg",
+            },
+            {
+                categ: 'Style Guide',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -83,7 +83,7 @@ export const TabsData = [
             },
             {
                 categ: 'Style Guide',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -91,11 +91,11 @@ export const TabsData = [
                     author: "admin",
                 },
                 alt: "featured1",
-                img: "/assets/images/post/1.jpg",
+                img: "/assets/images/post/4.jpg",
             },
             {
                 categ: 'Style Guide',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -103,7 +103,19 @@ export const TabsData = [
                     author: "admin",
                 },
                 alt: "featured1",
-                img: "/assets/images/post/2.jpg",
+                img: "/assets/images/post/5.jpg",
+            },
+            {
+                categ: 'Style Guide',
+                title: 'The path be beautiful, let us not ask where it leads',
+                excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
+                link: "#",
+                info: {
+                    publish: "June 18, 2017",
+                    author: "admin",
+                },
+                alt: "featured1",
+                img: "/assets/images/post/6.jpg",
             },
         ]
     },
@@ -155,7 +167,7 @@ export const TabsData = [
         post: [
             {
                 categ: 'Good Times',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -167,7 +179,7 @@ export const TabsData = [
             },
             {
                 categ: 'Good Times',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
@@ -179,7 +191,7 @@ export const TabsData = [
             },
             {
                 categ: 'Good Times',
-                title: 'If the path be beautiful, let us not ask where it leads',
+                title: 'The path be beautiful, let us not ask where it leads',
                 excerpt: "If you've ever watched folks gliding across the honky-tonk dance floor and thought, I wish I could do that, you're in for a treat. In just a few moments, you'll not only discover the magic of the Two-Step, but you’ll also learn how to own it with confidence and how to dress the part for both",
                 link: "#",
                 info: {
