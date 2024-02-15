@@ -11,3 +11,15 @@ export const QAllProducts = `
     }
   }
 `;
+
+export const QSingleProduct = `
+query MyQuery($slug: String!) {
+  productByHandle(handle: $slug) {
+    title
+    variants(first: 1) {
+      nodes {
+        id
+      }
+    }
+  }
+}`;

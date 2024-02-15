@@ -1,10 +1,13 @@
 import React from 'react'
 import { shopify } from '@/config/shopify'
-import { QAllProducts } from '@/config/query';
+import { QAllProducts, QSingleProduct } from '@/config/query';
 
 async function getData() {
      const res = await shopify({
-          query : QAllProducts
+          query : QSingleProduct,
+          variables: {
+               "slug" : "test-product"
+          }
      });
      return {
           products: res
