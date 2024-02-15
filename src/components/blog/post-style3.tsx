@@ -5,8 +5,8 @@ import React from 'react'
 const PostStyle3 = ({ data }: any) => {
     return (
         <div className='flex md:flex-row flex-col gap-5'>
-            <div className='md:w-1/3 w-full'>
-                <Image src={data?.img} alt='feature' width={735} height={640} className='h-full w-full' />
+            <div className='md:w-1/3 w-full h-[120px]'>
+                <Image src={data?.img} alt='feature' width={735} height={640} className='h-full w-full object-cover' />
             </div>
             <div className='md:w-2/3 w-full'>
                 <Link href="#" className='text-sm font-bold text-black hover:text-primary uppercase'>

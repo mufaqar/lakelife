@@ -46,10 +46,10 @@ const BannerSlider = () => {
                                 <p className="text-sm font-semibold text-white mb-2">
                                     {item?.categ}
                                 </p>
-                                <h1 className="md:text-5xl text-xl font-bold text-white">
+                                <h1 className="md:text-5xl text-xl font-bold text-white leading-relaxed">
                                     {item?.title}
                                 </h1>
-                                <p className="text-sm font-medium text-white my-6">
+                                <p className="text-sm font-medium text-white my-6 leading-relaxed">
                                     {item?.excerpt}
                                 </p>
                                 <Link href={item?.link} className="text-sm font-bold text-primary text-center uppercase bg-white hover:bg-secondary hover:text-white flex items-center justify-center px-4 py-3.5 max-w-[360px] w-full rounded">
@@ -59,7 +59,7 @@ const BannerSlider = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="thumb-wrapper absolute bottom-4 left-1/2 -translate-x-1/2 container mx-auto">
+                <div className="thumb-wrapper absolute bottom-4 left-1/2 -translate-x-1/2 container mx-auto max-w-[1020px] ">
                     {Posts?.map((item, idx) => (
                         <div
                             key={item.id}

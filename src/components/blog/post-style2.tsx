@@ -5,7 +5,7 @@ import React from 'react'
 const PostStyle2 = ({ data }: any) => {
     return (
         <div>
-            <div className='md:h-[360px] h-[200px]'>
+            <div className='md:h-[430px] h-[200px]'>
                 <Image src={data?.img} alt='feature' width={735} height={640} className='h-full w-full' />
             </div>
             <div className='mt-4'>
