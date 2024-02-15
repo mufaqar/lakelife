@@ -52,7 +52,7 @@ const BannerSlider = () => {
                                 <p className="text-sm font-medium text-white my-6 leading-relaxed">
                                     {item?.excerpt}
                                 </p>
-                                <Link href={item?.link} className="text-sm font-bold text-primary text-center uppercase bg-white hover:bg-secondary hover:text-white flex items-center justify-center px-4 py-3.5 max-w-[360px] w-full rounded">
+                                <Link href={item?.link} className="text-sm font-bold text-primary text-center uppercase bg-white hover:bg-secondary hover:text-white flex items-center justify-center px-4 py-3.5 max-w-[220px] w-full rounded">
                                     Read the Full Story
                                 </Link>
                             </div>

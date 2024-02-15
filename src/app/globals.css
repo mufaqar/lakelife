@@ -65,6 +65,7 @@
 
 body , p , a , body p {
   font-family: "lato", sans-serif;
+  font-weight: 400;
 }
 html{
   scroll-behavior: smooth;
